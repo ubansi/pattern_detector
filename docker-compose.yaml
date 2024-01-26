@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  pd-node:
+    image: node:20
+    tty: true
+    volumes:
+      - type: bind
+        source: ./
+        target: /app/
+    working_dir: /app
